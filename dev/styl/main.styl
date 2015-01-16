@@ -1,4 +1,7 @@
-//
+//Variables
+$open-sans = "Open Sans", sans-serif
+
+
 // IMPORT DEV-FILES
 //
 
@@ -22,7 +25,10 @@ global-reset()
 //@import "blocks/**/*"
 
 
-
+// ---
+@import "_header.styl"
+@import "_home.styl"
+@import "_about.styl"
 
 //
 // ACTIVATE BOX-MODAL AND CLEARFIX
@@ -32,11 +38,11 @@ global-reset()
 	-webkit-box-sizing border-box
 	-moz-box-sizing border-box
 	box-sizing border-box
+	outline none
 
 
 .cf
-    clearfix()
-
+	clearfix()
 
 
 //
@@ -44,17 +50,33 @@ global-reset()
 //
 
 html, body
-	//font-family $bebas
+	font-family $open-sans
 
 
 .wrapper
 	margin 0 auto
 	clearfix()
 
-.uhbuh€
+a
+	text-decoration none
+	color inherit
 
-
-
+h2
+	margin-top: 92px
+	font-weight 900
+	font-size 47px
+	color #02918c
+	text-transform uppercase
+	text-align center
+	&:after
+		display block
+		content: '~~~~~ :: ~~~~~'
+		margin-top 22px
+		font-size 16px
+		font-weight 400
+		color #7e8287
+	#services &
+		text-align left
 
 //
 // IMPORT MEDIA-QUERIES

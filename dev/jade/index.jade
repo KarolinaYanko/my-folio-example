@@ -2,6 +2,41 @@
 html(lang="en")
 	head
 		meta(charset="UTF-8")
-		title Document
+		title My Folio Example
 		link(rel="stylesheet", href="../css/main.css")
 	body
+		header
+			p.company-name  
+				a(href="index.html") My
+					span.colorized Folio
+			nav
+				ul
+					li
+						a(href="#home") home
+					li
+						a(href="#about") about me
+					li
+						a(href="#services") services
+					li
+						a(href="#works") my work
+					li
+						a(href="#contacts") contact me
+		section#home
+			p.suptitle Lorem ipsum dolor sit iusmod tempor
+			h1 Incididunt bore
+			p.subtitle Orem ipsum dolor sit amet, consectetur
+			div.special-brace
+			input.more-btn(type="button" value="know more")
+		section#about
+			h2 About me
+			p.description
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				strong  quis nostrud exercitation ullamco
+				|  laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+		section#services
+			h2 Services
+		section#works
+			h2 My work
+		section#contacts
+			h2 Contact me
+		footer
